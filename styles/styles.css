@@ -480,6 +480,7 @@ div.hide {
 }
 
 #meeting .left .calendly {
+    width: 100%;
     border: 1px solid #EAEAEA;
     border-radius: 15px;
     -webkit-border-radius: 15px;
