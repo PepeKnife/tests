@@ -21,31 +21,31 @@
                     <div class="nav-links">
                         <ul class="nav-items">
                             <li><a href="#abt">Sobre nosotros</a></li>
-                            <li><a href="#">¿Qué hacemos?</a></li>
-                            <li><a href="#">Visión</a></li>
+                            <li><a href="#QH">¿Qué hacemos?</a></li>
+                            <li><a href="#vision">Visión</a></li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-light">Contáctanos</a>
+                    <a href="#meeting" class="btn btn-light">Contáctanos</a>
                     <i class="fa-solid fa-bars" id="nav-toggle-btn"></i>
                 </nav>
 
                 <div class="dropdown-menu">
                     <ul>
                         <li><a href="#abt">Sobre nosotros</a></li>
-                        <li><a href="#">¿Qué hacemos?</a></li>
-                        <li><a href="#">Visión</a></li>
-                        <li><a href="#" class="btn btn-light">Contáctanos</a></li>
+                        <li><a href="#QH">¿Qué hacemos?</a></li>
+                        <li><a href="#vision">Visión</a></li>
+                        <li><a href="#meeting" class="btn btn-light">Contáctanos</a></li>
                     </ul>
                 </div>
             </header>
 
             <section class="container">
                 <h1>Destaca en línea con Brance, de manera innovadora y creativa</h1>
-                <a href="#" class="btn btn-light">Comienza Ahora</a>
+                <a href="#meeting" class="btn btn-light">Comienza Ahora</a>
             </section>
         </section>
 
-        <section id="abt">
+        <section id="abt" class="mark-section">
             <div class="container">
                 <h2>Sobre nosotros</h2>
                 <div class="marco">
@@ -57,49 +57,235 @@
                             <br><br>
                         </p>
 
-                        <p class="abt-p-hide">
-                            En Brance, entendemos que el marketing digital es más que solo hacer publicidad en línea. Es
-                            una combinación inteligente de estrategia, creatividad y análisis de datos para alcanzar tus
-                            objetivos comerciales. Trabajamos de cerca con nuestros clientes para comprender su visión y
-                            desarrollar soluciones digitales personalizadas que les permitan destacarse en un mercado
-                            competitivo.
-                            <br><br>
-                            Nuestro equipo está conformado por expertos apasionados por el mundo digital. Desde
-                            estrategas y diseñadores hasta especialistas en redes sociales y desarrolladores web, cada
-                            miembro de nuestro equipo aporta su conocimiento y experiencia para brindarte resultados
-                            excepcionales.
-                            <br><br>
-                            En Brance, nos esforzamos por mantenernos a la vanguardia de las últimas tendencias y
-                            tecnologías del marketing digital. Aprovechamos las herramientas más avanzadas y las mejores
-                            prácticas para optimizar tus campañas, mejorar la visibilidad de tu marca y aumentar la
-                            participación de tu audiencia objetivo.
-                            <br><br>
-                            Nuestros servicios abarcan una amplia gama de áreas clave, que incluyen estrategia digital,
-                            diseño y desarrollo web, SEO (optimización en motores de búsqueda), gestión de redes
-                            sociales, publicidad en línea, marketing de contenidos y mucho más. Adaptamos nuestras
-                            soluciones a las necesidades específicas de cada cliente, brindando un enfoque personalizado
-                            y resultados medibles.
-                            <br><br>
-                            En Brance, nos enorgullece establecer relaciones duraderas con nuestros clientes. Valoramos
-                            la transparencia, la comunicación abierta y el trabajo en equipo. Consideramos a nuestros
-                            clientes como socios comerciales y trabajamos de manera colaborativa para alcanzar el éxito
-                            mutuo.
-                            <br><br>
-                            Si estás buscando una agencia de marketing digital comprometida con la excelencia, la
-                            creatividad y los resultados tangibles, Brance es la elección perfecta. Permítenos impulsar
-                            tu presencia en línea y llevar tu negocio al siguiente nivel.
-                            <br><br>
-                            ¡Contáctanos hoy mismo y descubre cómo Brance puede transformar tu marca en el mundo
-                            digital!
-                        </p>
+                        <div class="abt-p-hide hide">
+                            Somos una agencia de marketing digital que entiende la importancia de combinar estrategia,
+                            creatividad y análisis de datos para alcanzar los objetivos comerciales. Trabajamos
+                            estrechamente con nuestros clientes para comprender su visión y desarrollar soluciones
+                            digitales personalizadas que les permitan destacarse en un mercado competitivo. Nuestro
+                            equipo está compuesto por expertos apasionados por el mundo digital que utilizan las últimas
+                            tendencias y tecnologías para optimizar campañas, mejorar la visibilidad de la marca y
+                            aumentar la participación de la audiencia objetivo. Ofrecemos una amplia gama de servicios,
+                            adaptados a las necesidades de cada cliente, y valoramos la transparencia, la comunicación
+                            abierta y el trabajo en equipo. Si buscas una agencia comprometida con la excelencia, la
+                            creatividad y los resultados tangibles, contáctanos hoy mismo y descubre cómo Brance puede
+                            transformar tu marca en el mundo digital.
+                        </div>
 
-                        <a href="" class="btn btn-dark">Conocer más</a>
+                        <div class="btn btn-dark toggle-show" onclick="showAbt()">Conocer más</div>
+                        <div class="btn btn-dark toggle-hide" onclick="hideAbt()">Conocer menos</div>
                     </div>
                     <div class="abt-right"></div>
                 </div>
             </div>
         </section>
+
+        <section id="QH">
+            <h2>¿Qué Hacemos?</h2>
+            <div class="container">
+                <div class="boxes">
+                    <ul>
+                        <div class="row1">
+                            <li id="structure">
+                                <div class="QH-box">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                            </li>
+                            <li id="test1">
+                                <div class="QH-box">
+                                    <i class="fa-solid fa-vial-virus"></i>
+                                </div>
+                            </li>
+                            <li id="test2">
+                                <div class="QH-box">
+                                    <i class="fa-solid fa-bath"></i>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="row2">
+                            <li id="test3">
+                                <div class="QH-box">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                            </li>
+                            <li id="test4">
+                                <div class="QH-box">
+                                    <i class="fa-solid fa-fire-extinguisher"></i>
+                                </div>
+                            </li>
+                            <li id="test5">
+                                <div class="QH-box">
+                                    <i class="fa-solid fa-cubes"></i>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="info marco">
+                    <div class="display-info">
+                        <div id="DAMLER">
+                            <div class="img"></div>
+                            <div class="content">
+                                <h3>Estructura DAMLER</h3>
+                                <p>Trabajaremos en base a esta estructura de marketing para otorgarte los mejores
+                                    resultados.</p>
+                            </div>
+                        </div>
+
+                        <div id="EJ1">
+                            <div class="img"></div>
+                            <div class="content">
+                                <h3>Test1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil doloribus voluptas
+                                    earum quae. Architecto molestiae sint incidunt placeat, numquam, debitis sapiente
+                                    quis autem inventore quisquam hic voluptate aliquid. Ut, est!</p>
+                            </div>
+                        </div>
+
+                        <div id="EJ2">
+                            <div class="img"></div>
+                            <div class="content">
+                                <h3>Test2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil doloribus voluptas
+                                    earum quae. Architecto molestiae sint incidunt placeat, numquam, debitis sapiente
+                                    quis autem inventore quisquam hic voluptate aliquid. Ut, est!</p>
+                            </div>
+                        </div>
+
+                        <div id="EJ3">
+                            <div class="img"></div>
+                            <div class="content">
+                                <h3>Test3</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil doloribus voluptas
+                                    earum quae. Architecto molestiae sint incidunt placeat, numquam, debitis sapiente
+                                    quis autem inventore quisquam hic voluptate aliquid. Ut, est!</p>
+                            </div>
+                        </div>
+
+                        <div id="EJ4">
+                            <div class="img"></div>
+                            <div class="content">
+                                <h3>Test4</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil doloribus voluptas
+                                    earum quae. Architecto molestiae sint incidunt placeat, numquam, debitis sapiente
+                                    quis autem inventore quisquam hic voluptate aliquid. Ut, est!</p>
+                            </div>
+                        </div>
+
+                        <div id="EJ5">
+                            <div class="img"></div>
+                            <div class="content">
+                                <h3>Test5</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil doloribus voluptas
+                                    earum quae. Architecto molestiae sint incidunt placeat, numquam, debitis sapiente
+                                    quis autem inventore quisquam hic voluptate aliquid. Ut, est!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="mark-section">
+            <div class="container">
+                <h2>Visión</h2>
+                <div class="marco">
+                    <div class="left"></div>
+
+                    <div class="right">
+                        <div class="content">
+                            <p>En Brance nos preocupamos por tu marca. La tratamos como si fuera nuestra y nuestras
+                                recomendaciones se basan en lo que haríamos si se tratara de nuestra propia empresa,
+                                sin
+                                tener en cuenta nuestros intereses personales.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="meeting">
+
+            <div class="left">
+
+                <h2>Hablemos!</h2>
+                <div class="calendly">
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/sebastian_giraldo/30min?primary_color=142f52"
+                        style="min-width:320px;height:630px;">
+                    </div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async>
+                    </script>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <h4>Agenda una cita gratuita!</h4>
+                <p>Ofrecemos una llamada estratégica gratuita y sin compromiso con Brance, donde elaboraremos
+                    estrategias de marketing en redes sociales adaptadas para tu negocio específico, con el objetivo de
+                    impulsar fuertemente el crecimiento de tu empresa y ventas en línea.
+                    <br><br>
+                    Solo tienes que buscar un horario que se ajuste a tu calendario y programarlo. Estamos ansiosos por
+                    hablar contigo.
+                </p>
+
+                <h4>Esta llamada estratégica es particularmente para:</h4>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i>
+                        Empresas que buscan aumentar sus ventas en línea y obtener un retorno de inversión
+                        impresionante.</li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>Empresas que buscan optimizar sus esfuerzos de marketing
+                        en redes sociales con la agencia líder
+                        de la industria.
+                    </li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>Empresas que buscan una agencia capaz de llevarlas de la
+                        mediocridad a la excelencia en el campo
+                        del comercio electrónico y las ventas en línea.</li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>Empresas que buscan una agencia que tenga como prioridad
+                        principal la satisfacción de sus
+                        clientes.</li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>Siempre nos enfocamos en el éxito de nuestros clientes
+                        actuales en lugar de buscar nuevos
+                        clientes.</li>
+                </ul>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="top-part">
+            <h5>¿Tienes alguna duda?</h5>
+            <p>No dudes en contactarnos, solo pon tu correo, nosotros te contactaremos</p>
+
+            <form>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Tu dirección email...">
+                    <input type="submit" value="ENVIAR" class="btn btn-dark">
+                </div>
+            </form>
+        </div>
+
+        <div class="bottom-part">
+
+            <div class="separator"></div>
+
+            <div class="items">
+                <div class="logo">brance</div>
+                <p class="copy">© 2023 Brance Agency. All Rights Reserved</p>
+                <div class="media"></div>
+            </div>
+
+        </div>
+
+    </footer>
 
     <script src="./JS/app.js"></script>
 
