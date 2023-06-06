@@ -9,50 +9,34 @@ navToggleBtn.onclick = () => {
   navToggleBtn.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
 
-/* Display none - Display block */
-function showAbt() {
-  //Get the p element
-  const pShow = document.querySelector(".abt-p-hide");
+///Display none - Display block
 
-  //Start the animation
-  pShow.classList.remove("hide");
-  pShow.classList.add("show");
+//toggle btns
+const showMoreBtn = document.getElementById("show-more");
+const showLessBtn = document.getElementById("show-less");
+showLessBtn.style.display = "none";
 
-  //Show the p element
-  pShow.style.display = "block";
+//Hide P element
+const abtPToggle = document.querySelector(".abt-p-hide");
+abtPToggle.style.display = "none";
 
-  //Show and hide know more and know less btn
-  const more = document.querySelector(".toggle-show");
-  more.style.display = "none";
+//Show more
+showMoreBtn.addEventListener("click", () => {
+  abtPToggle.style.display = "block";
+  showLessBtn.style.display = "block";
+  showMoreBtn.style.display = "none";
 
-  const less = document.querySelector(".toggle-hide");
-  less.style.display = "block";
+  abtPToggle.classList.remove("abt-anim-hide");
+  abtPToggle.classList.add("abt-anim-show");
+});
 
-  return false;
-}
+showLessBtn.addEventListener("click", () => {
+  abtPToggle.classList.add("abt-anim-hide");
+  abtPToggle.classList.remove("abt-anim-show");
 
-function hideAbt() {
-  //Get the p element
-  const pShow = document.querySelector(".abt-p-hide");
-
-  //Animate p element
-  pShow.classList.remove("show");
-  pShow.classList.add("hide");
-
-  //Hide the p element
-  pShow.addEventListener("animationend", () => {
-    pShow.style.display = "none";
-  });
-
-  //Show and hide know more and know less btn
-  const more = document.querySelector(".toggle-show");
-  more.style.display = "block";
-
-  const less = document.querySelector(".toggle-hide");
-  less.style.display = "none";
-
-  return false;
-}
+  showLessBtn.style.display = "none";
+  showMoreBtn.style.display = "block";
+});
 
 //SHOW AND HIDE QH SECTION
 
