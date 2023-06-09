@@ -264,10 +264,9 @@
         <div class="top-part">
             <h5>¿Tienes alguna duda?</h5>
             <p>No dudes en contactarnos, solo pon tu correo, nosotros te contactaremos</p>
-
-            <form>
+            <form id="form-send-email">
                 <div>
-                    <input type="email" name="email" id="email" placeholder="Tu dirección email...">
+                    <input type="email" name="email" id="message" placeholder="Tu dirección email...">
                     <input type="submit" value="ENVIAR" class="btn btn-dark">
                 </div>
             </form>
@@ -288,6 +287,14 @@
     </footer>
 
     <script src="./JS/app.js"></script>
+    <script src="./JS/gmail_api.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('zjVCnJ96kbaPdSUEE');
+        })();
+    </script>
 
 </body>
 

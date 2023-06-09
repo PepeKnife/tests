@@ -591,11 +591,11 @@ footer .top-part form div {
     -o-border-radius: 15px;
 }
 
-footer .top-part form #email {
+footer .top-part form #message {
     width: 90%;
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 99%;
     padding: 0 1em;
 }
 
@@ -778,19 +778,19 @@ footer .bottom-part .items .media {
         text-align: center;
     }
 
-    footer .top-part form {
+    footer .top-part #form-send-email {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    footer .top-part form div {
+    footer .top-part #form-send-email div {
         width: 80%;
         padding: 0.5em;
     }
 
-    footer .top-part form div input {
+    footer .top-part #form-send-email div input {
         font-size: 0.6em;
     }
 
